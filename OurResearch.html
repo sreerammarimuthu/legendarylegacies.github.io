@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Crime analytics visualizations for Legendary Legacies' mission">
+    <title>Legendary Legacies_About_Our Research</title>
+    <link rel='stylesheet' href='https://legendlegacy.org/wp-content/themes/hello-elementor/style.min.css' media='all' />
+    <link rel='stylesheet' href='https://legendlegacy.org/wp-content/plugins/elementor/assets/css/frontend.min.css' media='all' />
+    <style>
+        /* Legendary Legacies Blue */
+        :root {
+            --ll-blue: #0f2460; 
+            --ll-light-blue: #eef4fa;
+        }
+        
+        body {
+            font-family: Montserrat, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0f2460; /* Background around the entire page */
+        }
+
+        .container {
+            width: 100%;
+            max-width: none;
+            margin: auto;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #0f2460; /* Light blue background inside the container */
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #fff;
+            background-color: #0f2460;
+            padding: 20px 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin: 0;
+            color: #fff;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            margin: 10px 0 0;
+            color: #fff;
+        }
+
+        .section {
+            display: flex;
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            align-items: center;
+        }
+
+        .section:hover {
+            transform: translateY(-10px);
+        }
+
+        .visualization {
+            flex-basis: var(--visualization-width, 50%);
+            padding: 10px;
+        }
+
+        .description {
+            flex-basis: var(--description-width, 50%);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 1.8em;
+        }
+
+        p {
+            color: #555;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .reverse {
+            flex-direction: row-reverse;
+        }
+
+        @media (max-width: 1024px) {
+            .section {
+                flex-direction: column;
+            }
+
+            .reverse {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body class="elementor-template-full-width elementor-kit-172">
+
+<div class="container">
+    <div class="header">
+        <h1 style="font-size: 2.5em; font-weight: 400; margin-bottom: 20px; color: #efd267; text-align: center;">OUR RESEARCH</h1>
+        
+        <p style="text-align: justify; margin: 0 05%; font-size: 1.2em; color: #fff;">
+            Explore into our comprehensive and interactive data visualizations of crime analytics, offering in-depth insights into the underlying patterns, challenges, and successes shaping our community efforts for change.
+        </p>
+    </div>
+    
+
+    <div class="context-section" style="background-color: #0f2460; padding: 20px; border-radius: 10px; margin-bottom: 40px;">
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap;">
+            <!-- Image section -->
+            <div style="flex: 1.25; text-align: center;">
+                <img src="https://sreerammarimuthu.github.io/legendarylegacies.github.io/LL.png" alt="Research Collaboration" style="max-width: 80%; height: auto; border-radius: 10px; box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);">
+            </div>
+    
+            <!-- Description section -->
+            <div style="flex: 1.5; color: #fff;">
+                <p style="font-size: 1.2em; color: #fff;">
+                    This research was a collaborative initiative between Legendary Legacies and an interdisciplinary team of graduate students from Worcester Polytechnic Institute (WPI), led by Ronald Waddell, our Executive Director & Co-Founder, and Deborah Jackson, Dean of Business School at WPI.
+                </p>
+                <p style="font-size: 1.1em; color: #efd267;">
+                    Research Team: Sreeram Marimuthu, Rishika Akunuru, Rimika Singh Mourya
+                </p>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Visualization 1 -->
+    <div class="section" style="--visualization-width: 65%; --description-width: 35%;">
+        <div class="visualization">
+            <iframe src="https://sreerammarimuthu.github.io/legendarylegacies.github.io/Aggregate_Burden_of_Incarceration_US.html"></iframe>
+        </div>
+        <div class="description">
+            <h2 style="font-size: 1.75em; font-weight: 500; color: black;">True Cost of Incarceration in the U.S.</h2>
+            <p style="text-align: justify;">This chart highlights the significant financial burden of incarceration in the U.S., breaking down costs for correctional institutions, incarcerated individuals, and their families. It illustrates the far-reaching economic impacts, emphasizing the need for systemic changes that prioritize rehabilitation over incarceration.</p>
+        </div>
+    </div>
+
+    <!-- Visualization 2 (Reversed) -->
+    <div class="section reverse" style="--visualization-width: 70%; --description-width: 30%;">
+        <div class="visualization">
+            <iframe src="https://sreerammarimuthu.github.io/legendarylegacies.github.io/Capital_Punishment_Avg_Time.html"></iframe>
+        </div>
+        <div class="description">
+            <h2 style="font-size: 1.75em; font-weight: 500; color: black;">Capital Punishment: Average Time Between Sentencing and Execution</h2>
+            <p style="text-align: justify;">This visualization illustrates the trends in the average time served by inmates between sentencing and execution in capital punishment cases from 1977 to 2019. The chart offers a clear view of how these durations have evolved over time, highlighting the increasing delays in capital punishment proceedings.</p>
+        </div>
+    </div>
+
+    <!-- Visualization 3 -->
+    <div class="section" style="--visualization-width: 65%; --description-width: 35%;">
+        <div class="visualization">
+            <iframe src="https://sreerammarimuthu.github.io/legendarylegacies.github.io/Combined_Crime_Rates.html"></iframe>
+        </div>
+        <div class="description">
+            <h2 style="font-size: 1.75em; font-weight: 500; color: black;">Trends in Crime Rates Across Various Offenses in the US (2013-2020)</h2>
+            <p style="text-align: justify;">This chart visualizes the trends in various types of crimes, including homicide, robbery, and property crimes, from 2013 to 2020. Each crime type is represented by distinct colors, making it easy to observe changes over time. The data provides insights into the fluctuations in crime rates, helping to highlight patterns of increases or declines in specific criminal activities across the United States.</p>
+        </div>
+    </div>
+
+    <!-- Visualization 4 (Reversed) -->
+    <div class="section reverse" style="--visualization-width: 55%; --description-width: 45%;">
+        <div class="visualization">
+            <iframe src="https://sreerammarimuthu.github.io/legendarylegacies.github.io/Comparison_of_Costs_Prison_vs_Rehab.html"></iframe>
+        </div>
+        <div class="description">
+            <h2 style="font-size: 1.75em; font-weight: 500; color: black;">Cost Comparison: Incarceration vs. Rehabilitation</h2>
+            <p style="text-align: justify;">This bar chart highlights the significant cost difference between incarceration and rehabilitation programs in the U.S. The visualization demonstrates that the annual cost per inmate in prison is much higher compared to rehabilitation, making a strong case for the economic efficiency of rehabilitation programs as an alternative to incarceration.</p>
+        </div>
+    </div>
+
+    <!-- Visualization 5 -->
+    <div class="section" style="--visualization-width: 65%; --description-width: 35%;">
+        <div class="visualization">
+            <iframe src="https://sreerammarimuthu.github.io/legendarylegacies.github.io/Costs_Borne_by_Families_Children_Communities.html"></iframe>
+        </div>
+        <div class="description">
+            <h2 style="font-size: 1.75em; font-weight: 500; color: black;">The Hidden Costs of Mass Incarceration on Families and Communities</h2>
+            <p style="text-align: justify;">This visualization presents the wide-ranging economic and social costs due to the increased criminality of children with incarcerated parents to adverse health effects, education loss, and homelessness, the impact extends far beyond the direct costs of imprisonment. These costs highlight the need for reforms that address not just the individuals behind bars, but the larger societal toll incarceration takes on future generations and community well-being.</p>
+        </div>
+    </div>
+
+    <!-- Visualization 6 (Reversed) -->
+    <div class="section reverse" style="--visualization-width: 65%; --description-width: 35%;">
+        <div class="visualization">
+            <iframe src="https://sreerammarimuthu.github.io/legendarylegacies.github.io/Costs_Borne_by_Incarcerated_Persons.html"></iframe>
+        </div>
+        <div class="description">
+            <h2 style="font-size: 1.75em; font-weight: 500; color: black;">True Cost of Incarceration for Individuals Behind Bars</h2>
+            <p style="text-align: justify;">This visualization highlights the often-overlooked financial and personal costs faced by incarcerated individuals. From the significant reduction in lifetime earnings to lost wages during incarceration, the financial burden is steep. Additionally, the graph showcases the increased health risks, including higher mortality rates and nonfatal injuries, that add to the long-term toll of incarceration.</p>
+        </div>
+    </div>
+
+    <!-- Visualization 7 -->
+    <div class="section" style="--visualization-width: 60%; --description-width: 40%;">
+        <div class="visualization">
+            <iframe src="https://sreerammarimuthu.github.io/legendarylegacies.github.io/Economic_Burden_of_Incarceration.html"></iframe>
+        </div>
+        <div class="description">
+            <h2 style="font-size: 1.75em; font-weight: 500; color: black;">Economic Impact of Incarceration</h2>
+            <p style="text-align: justify;">This pie chart provides a breakdown of the financial burden that incarceration imposes on different sectors, including individuals, families, children, communities, and other associated costs. It illustrates the disproportionate economic strain placed on families and communities, showcasing how incarceration extends far beyond the prison walls, affecting broader societal well-being.</p>
+        </div>
+    </div>
+
+    <!-- Visualization 8 (Reversed) -->
+    <div class="section reverse" style="--visualization-width: 55%; --description-width: 45%;">
+        <div class="visualization">
+            <iframe src="https://sreerammarimuthu.github.io/legendarylegacies.github.io/Economic_Impact_of_Incarceration.html"></iframe>
+        </div>
+        <div class="description">
+            <h2 style="font-size: 1.75em; font-weight: 500; color: black;">Understanding the Economic Toll of Incarceration in the U.S.</h2>
+            <p style="text-align: justify;">This pie chart highlights the vast economic costs associated with incarceration in the United States, including corrections spending, lost wages for incarcerated individuals, and the reduced lifetime earnings for formerly incarcerated persons. The chart also accounts for the significant human cost, including nonfatal and fatal injuries, as well as higher mortality rates post-incarceration.</p>
+        </div>
+    </div>
+
+    <!-- Visualization 9 -->
+    <div class="section" style="--visualization-width: 55%; --description-width: 45%;">
+        <div class="visualization">
+            <iframe src="https://sreerammarimuthu.github.io/legendarylegacies.github.io/Personal_Savings_Rehab_vs_Incarceration.html"></iframe>
+        </div>
+        <div class="description">
+            <h2 style="font-size: 1.75em; font-weight: 500; color: black;">Personal Savings: Rehab vs. Incarceration</h2>
+            <p style="text-align: justify;">This bar chart compares the personal financial burdens of incarceration and rehab for individuals considering a lot of factors including Healthcare & Legal Costs. The visualization highlights how these expenses add up annually, with legal fees often outweighing healthcare costs. The comparison offers insight into the cost-saving benefits of rehabilitation over incarceration, reinforcing the importance of supporting rehabilitative solutions over punitive measures.</p>
+        </div>
+    </div>
+
+    <!-- Visualization 10 (Reversed) -->
+    <div class="section reverse" style="--visualization-width: 55%; --description-width: 45%;">
+        <div class="visualization">
+            <iframe src="https://sreerammarimuthu.github.io/legendarylegacies.github.io/Recidivism_Rates_Rehab_vs_Prison.html"></iframe>
+        </div>
+        <div class="description">
+            <h2 style="font-size: 1.75em; font-weight: 500; color: black;">Recidivism Comparison: Rehabilitation vs. Incarceration</h2>
+            <p style="text-align: justify;">This pie chart visualizes the significant difference in recidivism rates between individuals who went through rehabilitation programs versus those who were imprisoned. With rehabilitation showing a lower recidivism rate of 57% compared to prison at 75%, the chart highlights the effectiveness of rehabilitation in reducing repeat offenses. This data underscores the value of investing in rehabilitative approaches to lower recidivism and foster long-term community safety.</p>
+        </div>
+    </div>
+
+    <!-- Visualization 11 -->
+    <div class="section" style="--visualization-width: 55%; --description-width: 45%;">
+        <div class="visualization">
+            <iframe src="https://sreerammarimuthu.github.io/legendarylegacies.github.io/Societal_Savings_Rehab_vs_Incarceration.html"></iframe>
+        </div>
+        <div class="description">
+            <h2 style="font-size: 1.75em; font-weight: 500; color: black;">Societal Savings from Shifting Offenders to Rehabilitation</h2>
+            <p style="text-align: justify;">This bar chart illustrates the potential societal savings when increasing the percentage of offenders sent to rehabilitation programs instead of prison. With just 10% of offenders redirected to rehab, the savings reach $5 billion, and a larger shift of 40% yields $13 billion in savings. The chart emphasizes the financial benefits to society from investing in rehabilitation over incarceration.</p>
+        </div>
+    </div>
+
+    <!-- Visualization 12 (Reversed) -->
+    <div class="section reverse" style="--visualization-width: 65%; --description-width: 35%;">
+        <div class="visualization">
+            <iframe src="https://sreerammarimuthu.github.io/legendarylegacies.github.io/Total_Correctional_Population.html"></iframe>
+        </div>
+        <div class="description">
+            <h2 style="font-size: 1.75em; font-weight: 500; color: black;">Trends in the Total Correctional Population (1925-2022)</h2>
+            <p style="text-align: justify;">This visualization illustrates the growth in the total correctional population in the U.S. from 1925 to 2022. It highlights significant increases in the correctional population over the decades, peaking around the late 20th century. Through this chart, viewers can observe the impact of historical policies and societal changes on incarceration rates, underscoring the need for reform and improved support systems for returning citizens.</p>
+        </div>
+    </div>
+
+    <!-- Visualization 13 -->
+    <div class="section" style="--visualization-width: 70%; --description-width: 30%;">
+        <div class="visualization">
+            <iframe src="https://sreerammarimuthu.github.io/legendarylegacies.github.io/Violent_Victimizations_Combined.html"></iframe>
+        </div>
+        <div class="description">
+            <h2 style="font-size: 1.75em; font-weight: 500; color: black;">Trends in Violent Victimizations by Crime Type (2015-2020)</h2>
+            <p style="text-align: justify;">This visualization tracks the number of violent victimizations across various crime types between 2015 and 2020. It provides insight into trends for crimes like aggravated assault, robbery, and rape, allowing viewers to see how different types of violent crime have evolved over the years. The data underscores the varying impacts of violent crime on communities and the importance of targeted interventions.</p>
+        </div>
+    </div>
+
+    <!-- Visualization 14 (Reversed) -->
+    <div class="section reverse" style="--visualization-width: 55%; --description-width: 45%;">
+        <div class="visualization">
+            <iframe src="https://sreerammarimuthu.github.io/legendarylegacies.github.io/Youth_Incarceration_Trends.html"></iframe>
+        </div>
+        <div class="description">
+            <h2 style="font-size: 1.75em; font-weight: 500; color: black;">Youth Incarceration Trends</h2>
+            <p style="text-align: justify;">This chart highlights the significant decrease in youth incarceration over the past two decades, showing a drop from over 107,000 in 1999 to just over 25,000 in 2020. The visualization underscores progress in juvenile justice reform and the effectiveness of community-based alternatives to detention, offering hope for further reductions in youth confinement.</p>
+        </div>
+    </div>
+
+</div>
+<!-- Signature at the bottom right -->
+<div style="text-align: right; margin-right: 20px; font-size: 0.8em; color: rgba(153, 153, 153, 0.7);">
+    Interactive Data Visualizations & Our Research Webpage were designed by Sreeram Marimuthu
+</div>
+
+<script src="https://legendlegacy.org/wp-content/plugins/elementor/assets/js/frontend.min.js"></script>
+</body>
+</html>
