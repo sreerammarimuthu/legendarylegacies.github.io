@@ -21,5 +21,5 @@ The full project was integrated into Legendary Legacies’ public site to streng
 
 ## Live Dashboard
 
-View the live dashboard hosted on LL's public site here: https://legendlegacy.org/research-data/    
+View the live dashboard hosted on Legendary Legacies's public site here: https://legendlegacy.org/research-data/    
 
